@@ -103,6 +103,6 @@ app.delete("/blogs/:id", function(req,res){
 
 
 
-app.listen(3000,function(req,res){
-	console.log("Blog App has started!");
+app.listen(process.env.PORT, process.env.IP, function(){
+   console.log("The BlogApp Server Has Started!");
 });
