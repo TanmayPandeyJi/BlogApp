@@ -9,7 +9,8 @@ mongoose.set('useFindAndModify', false);
 mongoose.set('useCreateIndex', true);
 mongoose.set('useUnifiedTopology', true);
 
-mongoose.connect("mongodb://localhost/restful_blog_app");
+// mongoose.connect("mongodb://localhost/restful_blog_app");
+mongoose.connect("mongodb+srv://Tanmay:tanmay@cluster0-jhx5n.mongodb.net/test?retryWrites=true&w=majority");
 
 app.set("view engine","ejs");
 app.use(express.static("public"));
