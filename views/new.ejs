@@ -14,6 +14,10 @@
 			<input type="text" name="blog[image]" placeholder="image">
 		</div>
 		<div class="field">
+			<label>Author</label>
+			<input type="text" name="blog[author]" value="<%= currentUser.username %>" readonly>
+		</div>
+		<div class="field">
 			<label>Blog Content</label>
 			<textarea name="blog[body]"></textarea>
 		</div>

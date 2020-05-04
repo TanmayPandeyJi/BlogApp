@@ -14,6 +14,12 @@
 				   <p>
 		            <%= blog.body %>
 	               </p>
+				   <p>
+					   <em>Created By <%= blog.author %></em>  
+				   </p>
+				   <p>
+					   
+				   </p>
 			</div>
 			<a href="/blogs/<%= blog._id %>/edit"><button class="ui big inverted purple button">UPDATE</button></a>
 			<form id ="delete" action="/blogs/<%= blog._id %>?_method=DELETE" method="POST">
